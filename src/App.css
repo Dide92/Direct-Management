@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+
+
+* {
+  margin:0;
+}
+section {
+  height:100vh;
+  width:100vw;
+}
+.home {
+  background-image: url('./images/main2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.nav {
+  /* background-color: black; */
+  position: sticky;
+  background-color: white;
+  height:80px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.logo {
+  height: 100px; /* Adjust the height as needed */
+  width: 100px; /* Adjust the width as needed */
+  object-fit: cover; /* This will ensure the logo retains its aspect ratio while covering the space */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
   display: flex;
-  flex-direction: column;
+  justify-content:space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
+  color:black;
+  position: relative;
+
+}
+
+a span {
+  display: flex;
+  justify-items: flex-end;
+  position: relative;
+}
+
+a span::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: visibility 0s, transform 0.3s ease-in-out;
+}
+
+a span:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.section2{
+  background-image: url('./images/success.png');
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.section3{
+  background-image: url('./images/main-about.png');
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  margin-top: -20%;
+}
+
+.section4 {
+  margin-top:8%;
+  padding-top: 10%;
+  background-image: url('./images/main-services.png');
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+
 }
