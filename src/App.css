@@ -1,94 +1,105 @@
-
-
 * {
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
-section {
-  height:100vh;
-  width:100vw;
+
+html {
+  scroll-behavior: smooth;
 }
-.home {
-  background-image: url('./images/main2.png');
-  background-size: cover;
+
+.parallax-item {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-family: Montserrat, sans-serif;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.parallax-item h2 {
+ 
+  /* padding: 1rem; */
+  /* border-radius: 1rem; */
+}
+
+.parallax-item:first-child {
+  background: url("./images/div1home.png");
+  background-size:contain;
+  background-position: 50% 100%;
   background-repeat: no-repeat;
 }
-.nav {
-  /* background-color: black; */
-  position: sticky;
-  background-color: white;
-  height:80px;
+
+.parallax-item:nth-child(2) {
+  background: url("./images/about-main.png");
+  background-size:contain;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
 }
 
+.parallax-item:nth-child(3) {
+  background: url("./images/construction.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax Effect for DIV 3 */
+  min-height: 600px;
+}
+
+.parallax-item:nth-child(4) {
+  background: #1565c0;
+}
+
+@media screen and (max-width: 768px) {
+  .parallax-item h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:white;
+  color:#333;
+  padding: 10px 20px;
+  position: fixed;
+  top: -80px;
+  left: 0;
+  right: 0;
+  transition: top 0.3s;
+}
+.navbar.show {
+  top: 0;
+}
 
 .logo {
-  height: 100px; /* Adjust the height as needed */
-  width: 100px; /* Adjust the width as needed */
-  object-fit: cover; /* This will ensure the logo retains its aspect ratio while covering the space */
-}
-
-ul {
   display: flex;
-  justify-content:space-between;
   align-items: center;
+  gap: 10px;
 }
 
-li {
-  list-style: none;
+.logo img {
+  width: 50px;
+  height: 50px;
 }
 
-a {
-  text-decoration: none;
-  color:black;
-  position: relative;
-
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
-
-a span {
+.nav-links {
   display: flex;
-  justify-items: flex-end;
-  position: relative;
+  align-items: center;
+  gap: 20px;
 }
 
-a span::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background-color: red;
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: visibility 0s, transform 0.3s ease-in-out;
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-a span:hover::before {
-  visibility: visible;
-  transform: scaleX(1);
-}
-
-.section2{
-  background-image: url('./images/success.png');
-  background-size: cover;
-  background-position: 100%;
-  background-repeat: no-repeat;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-.section3{
-  background-image: url('./images/main-about.png');
-  background-size: cover;
-  background-position: 100%;
-  background-repeat: no-repeat;
-  margin-top: -20%;
-}
-
-.section4 {
-  margin-top:8%;
-  padding-top: 10%;
-  background-image: url('./images/main-services.png');
-  background-size: cover;
-  background-position: 100%;
-  background-repeat: no-repeat;
-
+.nav-links a:hover {
+  color: #89ADA3;
 }

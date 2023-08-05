@@ -18,14 +18,16 @@ const Home = () => {
   return (
     <section>
       <div id="parallax" className="parallax-item">
+        <h2>Projects Div 1</h2>
       </div>
       <div className="parallax-item">
+        <h2>Projects Div 2</h2>
       </div>
       <div className="parallax-item">
-        <h2>Home Div 3</h2>
+        <h2>Projects Div 3</h2>
       </div>
       <div className="parallax-item">
-        <h2>Home Div 4</h2>
+        <h2>Projects Div 4</h2>
       </div>
     </section>
   );

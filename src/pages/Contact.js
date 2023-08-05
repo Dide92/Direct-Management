@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-const Home = () => {
+const Contact = () => {
   useEffect(() => {
     const handleParallaxScroll = () => {
       const parallax = document.getElementById("parallax");
@@ -18,17 +18,19 @@ const Home = () => {
   return (
     <section>
       <div id="parallax" className="parallax-item">
+        <h2>Contact page div 1</h2>
       </div>
       <div className="parallax-item">
+        <h2>Contact page div 2</h2>
       </div>
       <div className="parallax-item">
-        <h2>Home Div 3</h2>
+        <h2>Contact page div 3</h2>
       </div>
       <div className="parallax-item">
-        <h2>Home Div 4</h2>
+        <h2>Contact page div 4</h2>
       </div>
     </section>
   );
 };
 
-export default Home;
+export default Contact;
