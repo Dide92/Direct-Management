@@ -1,4 +1,7 @@
 import React, { useEffect } from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import Nyc from "../images/nyc.jpeg"
 
 const Home = () => {
   useEffect(() => {
@@ -25,7 +28,21 @@ const Home = () => {
         <h2>Home Div 3</h2>
       </div>
       <div className="parallax-item">
-        <h2>Home Div 4</h2>
+        <h2>PROJECTS</h2>
+        <Carousel showArrows={true} showStatus={false} showThumbs={false}>
+          <div>
+          <img src={Nyc} />
+            <p className="legend">Legend 1</p>
+          </div>
+          <div>
+          <img src={Nyc} />
+            <p className="legend">Legend 2</p>
+          </div>
+          <div>
+          <img src={Nyc} />
+            <p className="legend">Legend 3</p>
+          </div>
+        </Carousel>
       </div>
     </section>
   );
