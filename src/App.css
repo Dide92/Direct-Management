@@ -18,12 +18,12 @@ html {
 }
 
 .parallax-item h2 {
- 
+  text-align: center;
   padding: 1rem;
   border-radius: 1rem; 
   font-family: sans-serif;
   color:#557C79;
-  font-size: 50px;;
+  font-size: 50px;
 }
 
 .parallax-item:first-child {
@@ -41,7 +41,8 @@ html {
 }
 
 .parallax-item:nth-child(3) {
-  background: url("./images/construction.jpeg");
+  background-color: white;
+
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Parallax Effect for DIV 3 */
@@ -112,3 +113,36 @@ html {
   margin: 0 auto; /* Center the carousel */
   padding:5%;
 }
+
+.scroll-box {
+  background-color: #89ADA3;
+  color: white;
+  padding: 15px;
+  margin: 10px auto; /* Center horizontally */
+  max-width: 500px; /* Limit the width */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scroll-box.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-box:hover {
+  transform: scale(1.05);
+}
+
+.scroll-box h3 {
+  font-size: 1.2rem; /* Smaller font size */
+  margin-bottom: 8px;
+}
+
+.scroll-box p {
+  font-size: 1rem;
+}
+
