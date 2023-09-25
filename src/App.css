@@ -18,12 +18,13 @@ html {
 }
 
 .parallax-item h2 {
-  text-align: center;
-  padding: 1rem;
+  text-align: left;
+  padding:10rem 10rem 5rem 15rem;
   border-radius: 1rem; 
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color:#557C79;
-  font-size: 50px;
+  font-size: 55px;
+  letter-spacing: 1px;
 }
 
 .parallax-item:first-child {
@@ -146,3 +147,55 @@ html {
   font-size: 1rem;
 }
 
+.about-img {
+  height: 500px;
+  background: url("./images/renovation.jpeg");
+  background-size:contain;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+}
+h2 {
+  text-align: left;
+  padding:5rem 10rem 5rem 15rem;
+  border-radius: 1rem; 
+  font-family: 'Montserrat', sans-serif;
+  color:#557C79;
+  font-size: 55px;
+  letter-spacing: 1px;
+}
+
+/* Your existing CSS rules here */
+
+/* Media query for iPhone 6, 7, and 8 screens */
+@media screen and (max-width: 375px) {
+  .parallax-item h2 {
+    font-size: 1.5rem; /* Adjust the font size for smaller screens */
+    padding: 2rem; /* Adjust padding for smaller screens */
+  }
+
+  /* Adjust any other styles for smaller screens */
+  
+  /* For example, adjust the navbar */
+  .navbar {
+    padding: 5px 10px; /* Smaller padding for the navbar */
+  }
+
+  /* Adjust the logo size */
+  .logo img {
+    width: 30px; /* Smaller logo size for smaller screens */
+    height: 30px; /* Smaller logo size for smaller screens */
+  }
+
+  /* Adjust font size for links in the navbar */
+  .nav-links a {
+    font-size: 14px; /* Smaller font size for links */
+  }
+
+  /* Adjust the scroll-box for smaller screens */
+  .scroll-box {
+    padding: 10px; /* Adjust padding for smaller screens */
+    max-width: 300px; /* Adjust maximum width for smaller screens */
+  }
+  
+  /* You can continue adjusting other styles as needed */
+}

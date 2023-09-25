@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import '../App.css';
+
 
 const About = () => {
   useEffect(() => {
@@ -17,17 +19,19 @@ const About = () => {
 
   return (
     <section>
-      <div id="parallax" className="parallax-item">
-        <h2>About page div 1</h2>
+      <div id="parallax">
+        <div className='about-img'>
+
+        </div>
+      </div>
+      <div >
+        <h2>About Us</h2>
       </div>
       <div className="parallax-item">
-        <h2>About page div 2</h2>
+        {/* <h2>About page div 3</h2> */}
       </div>
       <div className="parallax-item">
-        <h2>About page div 3</h2>
-      </div>
-      <div className="parallax-item">
-        <h2>About page div 4</h2>
+        {/* <h2>About page div 4</h2> */}
       </div>
     </section>
   );
