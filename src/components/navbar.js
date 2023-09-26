@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Link as ScrollLink } from 'react-scroll'; // Change the import
-import { Link } from 'react-router-dom'; // Add this import
-
-import Logo from '../images/logo.png'
+import { Link as ScrollLink } from 'react-scroll';
+import { Link } from 'react-router-dom';
+import Logo from '../images/logo.png';
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
+  const [burgerMenuOpen, setBurgerMenuOpen] = useState(false); // State for burger menu
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,23 +22,32 @@ const Navbar = () => {
     };
   }, []);
 
+  // Toggle burger menu
+  const toggleBurgerMenu = () => {
+    setBurgerMenuOpen(!burgerMenuOpen);
+  };
+  const closeBurgerMenu = () => {
+    setBurgerMenuOpen(false);
+  };
+
   return (
     <nav className={`navbar ${showNavbar ? 'show' : ''}`}>
       <div className="logo">
         <img src={Logo} alt="Logo" />
       </div>
-      <div className="nav-links">
-        <Link to="/" smooth={true} duration={1000}>Home</Link>
-        <Link to="about" smooth={true} duration={1000}>About</Link>
-        <Link to="services" smooth={true} duration={1000}>Services</Link>
-        <Link to="projects" smooth={true} duration={1000}>Projects</Link>
-        <Link to="contact" smooth={true} duration={1000}>Contact</Link>
-        {/* Use React Router's Link components for navigation */}
-        {/* <Link to="/" className="nav-link">Home</Link>
-        <Link to="/about" className="nav-link">About</Link>
-        <Link to="/services" className="nav-link">Services</Link>
-        <Link to="/projects" className="nav-link">Projects</Link>
-        <Link to="/contact" className="nav-link">Contact</Link> */}
+
+      <div className={`burger-icon ${burgerMenuOpen ? 'open' : ''}`} onClick={toggleBurgerMenu}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+
+      <div className={`nav-links ${burgerMenuOpen ? 'open' : ''}`}>
+        <Link to="/" smooth={true} duration={1000} onClick={closeBurgerMenu}>Home</Link>
+        <Link to="about" smooth={true} duration={1000} onClick={closeBurgerMenu}>About</Link>
+        <Link to="services" smooth={true} duration={1000} onClick={closeBurgerMenu}>Services</Link>
+        <Link to="projects" smooth={true} duration={1000} onClick={closeBurgerMenu}>Projects</Link>
+        <Link to="contact" smooth={true} duration={1000} onClick={closeBurgerMenu}>Contact</Link>
       </div>
     </nav>
   );

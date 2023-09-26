@@ -38,35 +38,47 @@ const Home = () => {
   
   return (
     <section>
-      <div id="parallax" className="parallax-item">
-      </div>
+      <div id="parallax" className="parallax-item"></div>
       <div className="parallax-item">
+        <button className='button-86' role='button'><a href="/about">Read More</a></button>
+        
       </div>
       <div className="parallax-item">
         <h2>SERVICES</h2>
         <ul className="scroll-list">
           <li className="animate-scroll">
             <div className="scroll-box">
-              <h3>Box 1</h3>
-              <p>Content for Box 1</p>
+              <button className='service-button'><a href='/services'><h3>Property Management Services for Commercial and Residential Properties</h3></a></button>
             </div>
           </li>
           <li className="animate-scroll">
             <div className="scroll-box">
-              <h3>Box 2</h3>
-              <p>Content for Box 2</p>
+            <button className='service-button'><a href='/services'><h3>Design and Installation of Security and Surveillance Systems for Commercial and Residential Properties</h3></a></button>
             </div>
           </li>
           <li className="animate-scroll">
             <div className="scroll-box">
-              <h3>Box 3</h3>
-              <p>Content for Box 3</p>
+            <button className='service-button'><a href='/services'><h3>Design and Installation of Internet Network Cables</h3></a></button>
             </div>
           </li>
           <li className="animate-scroll">
             <div className="scroll-box">
-              <h3>Box 4</h3>
-              <p>Content for Box 4</p>
+            <button className='service-button'><a href='/services'><h3>Design and Installation of Intercom Systems</h3></a></button>
+            </div>
+          </li>
+          <li className="animate-scroll">
+            <div className="scroll-box">
+            <button className='service-button'><a href='/services'><h3>Installation of Smart Lock Systems</h3></a></button>
+            </div>
+          </li>
+          <li className="animate-scroll">
+            <div className="scroll-box">
+            <button className='service-button'><a href='/services'><h3>General Contractor Services for Larger Renovation or Rehab Projects</h3></a></button>
+            </div>
+          </li>
+          <li className="animate-scroll">
+            <div className="scroll-box">
+            <button className='service-button'><a href='/services'><h3>Property Development Services (Remodeling)</h3></a></button>
             </div>
           </li>
         </ul>
