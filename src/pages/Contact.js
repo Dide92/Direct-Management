@@ -16,21 +16,28 @@ const Contact = () => {
   }, []);
 
   return (
-    <section>
-      <div id="parallax" className="parallax-item">
-        <h2>Contact page div 1</h2>
+    <section className='section1'>
+      <div id="parallax">
+        <div className='about-img'>
+
+        </div>
       </div>
-      <div className="parallax-item">
-        <h2>Contact page div 2</h2>
+      <div >
+        <h2 className='about-header'>Contact Us</h2>
       </div>
-      <div className="parallax-item">
-        <h2>Contact page div 3</h2>
+      <div className="contact-info">
+        <p>If you have any questions or inquiries, please feel free to reach out to us:</p>
+        <ul>
+          <li>Email: directmanagement@example.com</li>
+          <li>Phone: (718) 274-4300</li>
+          <li>Address: 4214 Astoria Blvd S, Queens, NY, 11103</li>
+        </ul>
       </div>
-      <div className="parallax-item">
-        <h2>Contact page div 4</h2>
-      </div>
+ 
+ 
     </section>
   );
 };
+
 
 export default Contact;

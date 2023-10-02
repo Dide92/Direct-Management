@@ -18,7 +18,7 @@ const About = () => {
   }, []);
 
   return (
-    <section>
+    <section className='section1'>
       <div id="parallax">
         <div className='about-img'>
 

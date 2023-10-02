@@ -59,7 +59,7 @@ const Services = () => {
   };
 
   return (
-    <section>
+    <section className='section1'>
       <div id="parallax">
         <div className='services-img'></div>
       </div>

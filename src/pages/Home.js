@@ -7,7 +7,7 @@ import '../App.css';
 const Home = () => {
   useEffect(() => {
     const handleScrollAnimation = () => {
-      const items = document.querySelectorAll('.scroll-box'); // Change to .scroll-box
+      const items = document.querySelectorAll('.scroll-box');
       const triggerBottom = window.innerHeight * 0.8;
 
       items.forEach(item => {
@@ -37,7 +37,7 @@ const Home = () => {
   }, []);
   
   return (
-    <section>
+    <section className='home-section'>
       <div id="parallax" className="parallax-item"></div>
       <div className="parallax-item">
         <button className='button-86' role='button'><a href="/about">Read More</a></button>
