@@ -29,8 +29,8 @@ const Contact = () => {
         <p>If you have any questions or inquiries, please feel free to reach out to us:</p>
         <ul>
           <li>Email: directmanagement@example.com</li>
-          <li>Phone: (718) 274-4300</li>
-          <li>Address: 4214 Astoria Blvd S, Queens, NY, 11103</li>
+          <li>Phone: (917) 565-0623</li>
+          <li>Address: 45-15 Barnett Ave, Queens, NY, 11104</li>
         </ul>
       </div>
  
