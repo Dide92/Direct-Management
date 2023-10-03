@@ -18,7 +18,7 @@ const Contact = () => {
   return (
     <section className='section1'>
       <div id="parallax">
-        <div className='about-img'>
+        <div className='about-img1'>
 
         </div>
       </div>

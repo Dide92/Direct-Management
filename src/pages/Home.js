@@ -3,6 +3,9 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Nyc from '../images/nyc.jpeg';
 import '../App.css';
+import Logo from '../images/logo.png';
+import Introabout from '../images/introabout.jpeg'
+
 
 const Home = () => {
   useEffect(() => {
@@ -38,13 +41,26 @@ const Home = () => {
   
   return (
     <section className='home-section'>
-      <div id="parallax" className="parallax-item"></div>
-      <div className="parallax-item">
-        <button className='button-86' role='button'><a href="/about">Read More</a></button>
-        
+      <div id="parallax" className="parallax-item">
+        <div className='img-section'></div>
+        <div className='title'><h1>
+DIRECT <img src={Logo} className='logo1' alt="Logo" /> MANAGEMENT <span className='underline'>SERVICES LLC.</span></h1></div>
+        <div className='brick-quote'>"Building Dreams, One Brick at a Time"</div>
       </div>
       <div className="parallax-item">
-        <h2>SERVICES</h2>
+        <div className='about1'>
+        <h2 className='about-title'>ABOUT US</h2>
+        <p className='about-intro'>Direct Management Services LLC. was incorporated on February 2021 in New York to operate in real estate industry as a property management company while also offering contracting services.</p>
+        <button className='button-86' role='button'><a className='button-a' href="/about">Read More</a></button>
+        </div>
+        <div className='div2'>
+        <div className='back-img'>
+        <img src={Introabout} className='about-img' />
+        </div>
+        </div>
+      </div>
+      <div className="parallax-item">
+        <h2 className='services-title'>SERVICES</h2>
         <ul className="scroll-list">
           <li className="animate-scroll">
             <div className="scroll-box">
@@ -85,7 +101,7 @@ const Home = () => {
       </div>
      
       <div className="parallax-item">
-        <h2>PROJECTS</h2>
+        <h2 className='projects-title'>PROJECTS</h2>
         <Carousel showArrows={true} showStatus={false} showThumbs={false}>
           <div>
             <img src={Nyc} alt="Project 1" />

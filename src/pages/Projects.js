@@ -93,7 +93,7 @@ const Projects = () => {
   return (
     <section className='section1'>
       <div id="parallax">
-        <div className="about-img"></div>
+        <div className="about-img1"></div>
       </div>
       <div>
         <h2 className="project-header">Projects</h2>
