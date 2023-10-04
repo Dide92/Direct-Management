@@ -27,7 +27,7 @@ const Home = () => {
     };
  
     window.scrollTo(0, 0);
-    
+
     const handleParallaxScroll = () => {
       const parallax = document.getElementById('parallax');
       let offset = window.pageYOffset;
@@ -54,8 +54,8 @@ const Home = () => {
     <section className='home-section'>
       <div id="parallax" className="parallax-item">
         <div className='img-section'></div>
-        <div className='title' data-aos="fade-down"><h1>
-DIRECT <img src={Logo} className='logo1' alt="Logo" /> MANAGEMENT <span className='underline'>SERVICES LLC.</span></h1></div>
+        <div className='title' data-aos="fade-down">
+          <h1 className='name'>DIRECT <img src={Logo} className='logo1' alt="Logo" /> MANAGEMENT <span className='underline'>SERVICES LLC.</span></h1></div>
         <div className='brick-quote' data-aos="fade-right">"Building Dreams, One Brick at a Time"</div>
       </div>
       <div className="parallax-item">
