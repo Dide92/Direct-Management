@@ -121,7 +121,7 @@ h1{
 .services-title{
   font-weight:500;
 }
-@media (max-width: 768px) {
+@media (max-width: 400px) {
   html{
     overflow-y:hidden;
   }
@@ -137,6 +137,7 @@ h1{
     top:20%;
     left:5%;
     padding-top:10%;
+    font-size:30px;
   }
   .about-title{
     position:relative;
