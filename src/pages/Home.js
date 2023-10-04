@@ -5,6 +5,8 @@ import Nyc from '../images/nyc.jpeg';
 import '../App.css';
 import Logo from '../images/logo.png';
 import Introabout from '../images/introabout.jpeg'
+import 'aos/dist/aos.css'; 
+import AOS from 'aos'; 
 
 
 const Home = () => {
@@ -23,6 +25,7 @@ const Home = () => {
         }
       });
     };
+ 
 
     const handleParallaxScroll = () => {
       const parallax = document.getElementById('parallax');
@@ -37,24 +40,31 @@ const Home = () => {
       window.removeEventListener('scroll', handleScrollAnimation);
       window.removeEventListener('scroll', handleParallaxScroll);
     };
-  }, []);
+     }, []);
+    AOS.init({
+      duration: 2000, 
+      easing: 'ease-in-out',
+      once: true, 
+     
+    });
+
   
   return (
     <section className='home-section'>
       <div id="parallax" className="parallax-item">
         <div className='img-section'></div>
-        <div className='title'><h1>
+        <div className='title' data-aos="fade-down"><h1>
 DIRECT <img src={Logo} className='logo1' alt="Logo" /> MANAGEMENT <span className='underline'>SERVICES LLC.</span></h1></div>
-        <div className='brick-quote'>"Building Dreams, One Brick at a Time"</div>
+        <div className='brick-quote' data-aos="fade-right">"Building Dreams, One Brick at a Time"</div>
       </div>
       <div className="parallax-item">
-        <div className='about1'>
-        <h2 className='about-title'>ABOUT US</h2>
-        <p className='about-intro'>Direct Management Services LLC. was incorporated on February 2021 in New York to operate in real estate industry as a property management company while also offering contracting services.</p>
-        <button className='button-86' role='button'><a className='button-a' href="/about">Read More</a></button>
+        <div className='about1' >
+        <h2 className='about-title' data-aos="fade-up">ABOUT US</h2><br></br><br></br>
+        <p className='about-intro' data-aos="fade-up">Direct Management Services LLC. was incorporated on February 2021 in New York to operate in real estate industry as a property management company while also offering contracting services.</p>
+        <button className='button-86' data-aos="fade-up" role='button'><a className='button-a' href="/about">Read More</a></button>
         </div>
         <div className='div2'>
-        <div className='back-img'>
+        <div className='back-img' data-aos="fade-right">
         <img src={Introabout} className='about-img' />
         </div>
         </div>

@@ -419,7 +419,7 @@ ul {
 }
 
 .service-details {
-  padding-top: 3%;
+  padding-top: 1%;
   color:#5d6160;
 }
 
@@ -588,5 +588,10 @@ ul {
   background-size: cover;
   height:70px;
   width:100px;
+
+}
+
+.contact-info {
+  color:#5d6160;
 
 }
