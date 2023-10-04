@@ -12,6 +12,7 @@ const About = () => {
       parallax.style.backgroundPositionY = offset * 0.7 + "px";
     };
 
+    window.scrollTo(0, 0);
     window.addEventListener("scroll", handleParallaxScroll);
 
     return () => {

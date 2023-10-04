@@ -28,6 +28,7 @@ const testimonialData = [
 
 const Testimonials = () => {
   useEffect(() => {
+    window.scrollTo(0, 0);
     // Initialize AOS
     AOS.init();
 

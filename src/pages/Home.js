@@ -26,7 +26,8 @@ const Home = () => {
       });
     };
  
-
+    window.scrollTo(0, 0);
+    
     const handleParallaxScroll = () => {
       const parallax = document.getElementById('parallax');
       let offset = window.pageYOffset;

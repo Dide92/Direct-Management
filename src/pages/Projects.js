@@ -83,6 +83,7 @@ const Projects = () => {
       )
     );
   };
+  window.scrollTo(0, 0);
 
   const handleMouseOut = () => {
     setProjects((prevProjects) =>

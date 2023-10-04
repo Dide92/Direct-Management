@@ -53,6 +53,7 @@ const Services = () => {
   const handleServiceHover = (index) => {
     setExpandedService(index);
   };
+  window.scrollTo(0, 0);
 
   const handleServiceBlur = () => {
     setExpandedService(null);
